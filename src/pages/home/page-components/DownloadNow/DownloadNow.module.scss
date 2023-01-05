@@ -1,0 +1,131 @@
+@import 'styles/abstract/mixins';
+
+.container {
+  padding: 192px 0;
+  max-width: 560px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include respond(sm) {
+    padding: 64px 24px;
+  }
+}
+
+.icon {
+  height: 80px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+  color: var(--color-neutral-400);
+
+  svg {
+    height: 60px;
+    width: auto;
+  }
+
+  @include respond(sm) {
+    height: 64px;
+    width: 64px;
+    margin-bottom: 24px;
+
+    svg {
+      height: 48px;
+    }
+  }
+}
+
+.title {
+  font-size: 64px;
+  line-height: 72px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-family: var(--font-aeonik);
+  letter-spacing: -0.04em;
+
+  @include respond(sm) {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 12px;
+  }
+}
+
+.info {
+  color: var(--color-neutral-600);
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 32px;
+  max-width: 540px;
+
+  @include respond(sm) {
+    font-size: 14px;
+    margin-bottom: 32px;
+    line-height: 24px;
+  }
+}
+
+.actions {
+  display: flex;
+
+  & > * + * {
+    margin-left: 16px;
+  }
+
+  @include respond(sm) {
+    flex-direction: column;
+    align-items: center;
+
+    & > * + * {
+      margin-left: 0;
+      margin-top: 16px;
+    }
+  }
+
+  &__app {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    padding: 12px 24px;
+    border-radius: 6px;
+    background: var(--color-neutral-900);
+    border: none;
+    color: var(--color-neutral-0);
+
+    svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 12px;
+    }
+  }
+
+  &__store {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 6px;
+    background: none;
+
+    svg {
+      height: 48px;
+    }
+  }
+
+  &__qr {
+    padding: 6.5px;
+    border: 1px solid var(--color-neutral-200);
+    border-radius: 6px;
+    display: flex;
+    background: none;
+
+    svg {
+      height: 35px;
+      width: 35px;
+    }
+  }
+}

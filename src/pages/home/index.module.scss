@@ -1,0 +1,10 @@
+@import 'styles/abstract/mixins';
+
+section.hero,
+section.sponsors {
+  margin-bottom: 128px;
+
+  @include respond(sm) {
+    margin-bottom: 64px;
+  }
+}

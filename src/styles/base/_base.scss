@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+  line-height: inherit;
+  font-family: var(--font-inter);
+}
+
+body {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: var(--font-inter);
+  color: var(--neutral-900);
+}
+
+button {
+  cursor: pointer;
+}

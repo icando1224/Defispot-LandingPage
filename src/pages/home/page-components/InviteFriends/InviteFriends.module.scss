@@ -1,0 +1,71 @@
+@import 'styles/abstract/mixins';
+
+.card {
+  padding: 96px 128px;
+  border-radius: 24px;
+  background-color: var(--color-neutral-900);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+
+  @include respond(sm) {
+    border-radius: 0;
+    margin-left: -24px;
+    margin-right: -24px;
+    padding: 48px 24px;
+  }
+}
+
+.title {
+  font-size: 80px;
+  line-height: 96px;
+  color: var(--color-neutral-0);
+  margin-bottom: 24px;
+  letter-spacing: -0.04em;
+  max-width: 712px;
+  font-weight: 500;
+
+  @include respond(sm) {
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 16px;
+  }
+
+  span {
+    color: var(--color-blue-400);
+  }
+}
+
+.info {
+  max-width: 530px;
+  color: var(--color-neutral-400);
+  margin-bottom: 32px;
+  font-size: 18px;
+  line-height: 32px;
+
+  @include respond(sm) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 32px;
+  }
+}
+
+.action {
+  @include respond(sm) {
+    width: 100%;
+  }
+}
+
+.svg-shape {
+  width: 832px;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  @include respond(sm) {
+    display: none;
+  }
+}

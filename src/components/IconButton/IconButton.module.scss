@@ -1,0 +1,28 @@
+@import 'styles/abstract/mixins';
+
+.btn {
+  height: 48px;
+  width: 48px;
+  border-radius: 100px;
+  background-color: var(--color-neutral-0);
+  border: 1px solid var(--color-neutral-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-neutral-900);
+
+  svg {
+    width: 15px;
+    height: auto;
+  }
+
+  @include respond(sm) {
+    height: 32px;
+    width: 32px;
+  }
+}
+
+.disabled {
+  cursor: not-allowed;
+  color: var(--color-neutral-300);
+}

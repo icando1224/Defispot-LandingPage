@@ -1,0 +1,8 @@
+export { Hero } from './Hero/Hero'
+export { Investments } from './Investments/Investments'
+export { GetStarted } from './GetStarted/GetStarted'
+export { Divider } from './Divider/Divider'
+export { Blockchains } from './Blockchains/Blockchains'
+export { Portfolio } from './Portfolio/Portfolio'
+export { InviteFriends } from './InviteFriends/InviteFriends'
+export { DownloadNow } from './DownloadNow/DownloadNow'

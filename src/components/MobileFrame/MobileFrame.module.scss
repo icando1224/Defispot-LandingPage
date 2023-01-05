@@ -1,0 +1,25 @@
+.frame {
+  border: 1px solid var(--color-neutral-200);
+  border-radius: 24px;
+  position: relative;
+  height: 708px;
+  width: 100%;
+  overflow: hidden;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.handle {
+  width: 86px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: var(--color-neutral-100);
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
